@@ -6,7 +6,7 @@
     background-image: url('/images/hero-mobile.jpg');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 106%;
 
     @include breakpoint-up(test) {
       height: auto;
@@ -24,6 +24,9 @@
     min-height: 100%;
     padding-top: 2.75rem;
     background-image: $linearGrad-1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 
     @include breakpoint-up(test) {
       text-align: left;
@@ -31,7 +34,7 @@
   
     p {
       font-size: 0.75rem;
-      padding: 1rem 2.5rem 0 2.5rem;
+      padding: 1rem 2.5rem 0 0;
       line-height: 1.6;
     }
 
@@ -41,7 +44,7 @@
   }
   
   &__cta {
-    text-align: center;
+    text-align: left;
     padding-top: 1rem;
     position: relative;
   }
@@ -60,7 +63,7 @@
     height: 45px;
     width: 60px;
     position: absolute;
-    right: 40px;
+    right: 30px;
     border: 1px solid $darkGrayishRed;
     box-shadow: -1px -1px 2px 2px rgba(0, 0, 0, 0.2) ;
 

@@ -47,6 +47,10 @@ body {
   padding: 1.25rem;
 }
 
+.container__5 {
+  padding: 4rem;
+}
+
 h1, h2, h3 {
   font-weight: 300;
   line-height: 1.15;
@@ -84,10 +88,10 @@ strong {
   background-image: url("/images/hero-mobile.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 106%;
 }
 
-@media (min-width: 48rem) {
+@media screen and (min-width: 48rem) {
   .hero__image {
     height: auto;
     background-image: url("/images/hero-desktop.jpg");
@@ -104,9 +108,19 @@ strong {
   min-height: 100%;
   padding-top: 2.75rem;
   background-image: linear-gradient(135deg, white, #fff5f5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
-@media (min-width: 48rem) {
+@media screen and (min-width: 48rem) {
   .hero__info {
     text-align: left;
   }
@@ -114,18 +128,18 @@ strong {
 
 .hero__info p {
   font-size: 0.75rem;
-  padding: 1rem 2.5rem 0 2.5rem;
+  padding: 1rem 2.5rem 0 0;
   line-height: 1.6;
 }
 
-@media (min-width: 48rem) {
+@media screen and (min-width: 48rem) {
   .hero__info {
     grid-area: hero-info;
   }
 }
 
 .hero__cta {
-  text-align: center;
+  text-align: left;
   padding-top: 1rem;
   position: relative;
 }
@@ -144,7 +158,7 @@ strong {
   height: 45px;
   width: 60px;
   position: absolute;
-  right: 40px;
+  right: 30px;
   border: 1px solid #413a3a;
   -webkit-box-shadow: -1px -1px 2px 2px rgba(0, 0, 0, 0.2);
           box-shadow: -1px -1px 2px 2px rgba(0, 0, 0, 0.2);
@@ -160,7 +174,11 @@ strong {
   grid-area: header;
 }
 
-@media (min-width: 48rem) {
+.grid {
+  min-height: 100vh;
+}
+
+@media screen and (min-width: 48rem) {
   .grid {
     display: -ms-grid;
     display: grid;
