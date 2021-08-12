@@ -79,6 +79,10 @@ strong {
   font-weight: 700;
 }
 
+.app {
+  background-image: url("/images/bg-pattern-desktop.svg");
+}
+
 .hero {
   height: 51vh;
 }
@@ -86,9 +90,8 @@ strong {
 .hero__image {
   height: 15.625rem;
   background-image: url("/images/hero-mobile.jpg");
-  background-position: center;
   background-repeat: no-repeat;
-  background-size: 106%;
+  background-size: 95%;
 }
 
 @media screen and (min-width: 48rem) {
@@ -175,15 +178,16 @@ strong {
 }
 
 .grid {
+  display: -ms-grid;
+  display: grid;
   min-height: 100vh;
+  padding: 7rem;
 }
 
 @media screen and (min-width: 48rem) {
   .grid {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-columns: (2fr)[1];
+        grid-template-columns: repeat(1, 2fr);
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas: "header hero-image" "hero-info hero-image";

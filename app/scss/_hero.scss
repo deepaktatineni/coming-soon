@@ -4,9 +4,8 @@
   &__image {
     height: 15.625rem;
     background-image: url('/images/hero-mobile.jpg');
-    background-position: center;
     background-repeat: no-repeat;
-    background-size: 106%;
+    background-size: 95%;
 
     @include breakpoint-up(test) {
       height: auto;
